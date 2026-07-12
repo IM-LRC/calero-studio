@@ -1,30 +1,32 @@
 import Reveal from "@/components/Reveal";
+import Image from "next/image";
 const Projects = () => {
   const projects = [
     {
       title: "Site vitrine premium",
       category: "Web Design • Développement",
       description:
-        "Création d'une expérience web moderne pensée pour valoriser une marque.",
+        "Création d'une expérience web moderne pensée pour valoriser une marque et améliorer sa présence digitale.",
       stack: "Next.js / Tailwind CSS",
-      image: "/projects/project-1.jpg",
+      image: "/projects/project-1.png",
     },
     {
       title: "Plateforme digitale",
       category: "Application Web",
-      description: "Conception d'une interface rapide et intuitive.",
+      description:
+        "Conception d'une interface rapide et intuitive adaptée aux besoins des utilisateurs.",
       stack: "React / TypeScript",
-      image: "/projects/project-2.jpg",
+      image: "/projects/project-2.png",
     },
     {
       title: "Refonte digitale",
       category: "UX • Front-end",
-      description: "Modernisation complète d'une identité web.",
+      description:
+        "Modernisation complète d'une identité web avec une approche centrée expérience utilisateur.",
       stack: "Design / Front-end",
-      image: "/projects/project-3.jpg",
+      image: "/projects/project-3.png",
     },
   ];
-
   return (
     <section id="projects" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
@@ -42,10 +44,11 @@ const Projects = () => {
           {projects.map((project) => (
             <Reveal key={project.title}>
               <article className="group">
-                <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100 shadow-sm">
-                  <img
+                <div className=" relative aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100 shadow-sm">
+                  <Image
                     src={project.image}
                     alt={project.title}
+                    fill
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                   />
                 </div>

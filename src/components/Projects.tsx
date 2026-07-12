@@ -5,22 +5,23 @@ const Projects = () => {
       title: "Site vitrine premium",
       category: "Web Design • Développement",
       description:
-        "Création d'une expérience web moderne pensée pour valoriser une marque et améliorer sa présence digitale.",
+        "Création d'une expérience web moderne pensée pour valoriser une marque.",
       stack: "Next.js / Tailwind CSS",
+      image: "/projects/project-1.jpg",
     },
     {
       title: "Plateforme digitale",
       category: "Application Web",
-      description:
-        "Conception d'une interface rapide et intuitive adaptée aux besoins des utilisateurs.",
+      description: "Conception d'une interface rapide et intuitive.",
       stack: "React / TypeScript",
+      image: "/projects/project-2.jpg",
     },
     {
       title: "Refonte digitale",
       category: "UX • Front-end",
-      description:
-        "Modernisation complète d'une identité web avec une approche centrée expérience utilisateur.",
+      description: "Modernisation complète d'une identité web.",
       stack: "Design / Front-end",
+      image: "/projects/project-3.jpg",
     },
   ];
 
@@ -41,10 +42,12 @@ const Projects = () => {
           {projects.map((project) => (
             <Reveal key={project.title}>
               <article className="group">
-                <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100">
-                  <div className="flex h-full items-center justify-center text-gray-400 transition duration-500 group-hover:scale-105">
-                    Aperçu projet
-                  </div>
+                <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100 shadow-sm">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
                 </div>
 
                 <div className="mt-6">

@@ -1,33 +1,33 @@
 const Footer = () => {
   return (
-    <footer className="border-t py-10">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 md:flex-row">
+    <footer className="border-t">
+      <div className="max-w-7xl mx-auto flex flex-col gap-8 px-6 py-12 md:flex-row md:items-center md:justify-between">
         <div>
           <h3 className="text-xl font-bold">
-            CALERO<span className="text-gray-500">.</span>
+            CALERO<span className="text-blue-600">.</span>
           </h3>
 
           <p className="mt-2 text-sm text-gray-500">
-            Développement web & intégration.
+            Digital studio — Création web moderne.
           </p>
         </div>
 
-        <nav className="flex gap-6 text-sm">
-          <a href="#services" className="hover:opacity-70 transition">
+        <div className="flex gap-6 text-sm text-gray-600">
+          <a href="#services" className="hover:text-black transition">
             Services
           </a>
 
-          <a href="#projects" className="hover:opacity-70 transition">
+          <a href="#projects" className="hover:text-black transition">
             Projets
           </a>
 
-          <a href="#contact" className="hover:opacity-70 transition">
+          <a href="#contact" className="hover:text-black transition">
             Contact
           </a>
-        </nav>
+        </div>
 
         <p className="text-sm text-gray-500">
-          © {new Date().getFullYear()} CALERO Studio. Tous droits réservés.
+          © {new Date().getFullYear()} CALERO Studio
         </p>
       </div>
     </footer>

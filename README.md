@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+CALERO Studio
 
-## Getting Started
+Site officiel de CALERO Studio, une micro-entreprise spécialisée dans la création de sites web modernes et l'intégration d'interfaces.
 
-First, run the development server:
+🚀 À propos
 
-```bash
+CALERO Studio accompagne les projets web avec :
+
+Création de sites vitrines modernes
+Intégration de maquettes Figma en code
+Développement avec des technologies web performantes
+Optimisation de l'expérience utilisateur
+🛠️ Technologies utilisées
+Next.js
+React
+TypeScript
+Tailwind CSS
+Git & GitHub
+📦 Installation
+
+Cloner le projet :
+
+git clone https://github.com/IM-LRC/calero-studio.git
+
+Installer les dépendances :
+
+npm install
+
+Lancer le serveur de développement :
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Le projet sera disponible sur :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
+📁 Structure du projet
+src/
+├── app/
+├── components/
+├── public/
+└── styles/
+🌐 Déploiement
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Le site sera déployé sur un serveur VPS avec une configuration Nginx et un nom de domaine personnalisé.
 
-## Learn More
+📌 Statut du projet
 
-To learn more about Next.js, take a look at the following resources:
+🚧 En développement
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Le site vitrine CALERO Studio est actuellement en cours de création.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📞 Contact
 
-## Deploy on Vercel
+CALERO Studio
+Développement web & intégration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Email : leocalvo.dev@gmail.com

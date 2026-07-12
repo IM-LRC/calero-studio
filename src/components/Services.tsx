@@ -1,3 +1,4 @@
+import Reveal from "@/components/Reveal";
 const Services = () => {
   const services = [
     {
@@ -23,15 +24,17 @@ const Services = () => {
   return (
     <section id="services" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="max-w-3xl mb-20">
-          <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
-            Services
-          </p>
+        <Reveal>
+          <div className="max-w-3xl mb-20">
+            <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
+              Services
+            </p>
 
-          <h2 className="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
-            Des solutions digitales pensées pour durer.
-          </h2>
-        </div>
+            <h2 className="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
+              Des solutions digitales pensées pour durer.
+            </h2>
+          </div>
+        </Reveal>
 
         <div className="divide-y border-y">
           {services.map((service) => (

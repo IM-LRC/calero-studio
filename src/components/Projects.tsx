@@ -1,3 +1,4 @@
+import Reveal from "@/components/Reveal";
 const Projects = () => {
   const projects = [
     {
@@ -38,23 +39,27 @@ const Projects = () => {
 
         <div className="grid gap-10 md:grid-cols-3">
           {projects.map((project) => (
-            <article key={project.title} className="group">
-              <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100">
-                <div className="flex h-full items-center justify-center text-gray-400 transition duration-500 group-hover:scale-105">
-                  Aperçu projet
+            <Reveal key={project.title}>
+              <article className="group">
+                <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100">
+                  <div className="flex h-full items-center justify-center text-gray-400 transition duration-500 group-hover:scale-105">
+                    Aperçu projet
+                  </div>
                 </div>
-              </div>
 
-              <div className="mt-6">
-                <p className="text-sm text-blue-600">{project.category}</p>
+                <div className="mt-6">
+                  <p className="text-sm text-blue-600">{project.category}</p>
 
-                <h3 className="mt-3 text-2xl font-semibold">{project.title}</h3>
+                  <h3 className="mt-3 text-2xl font-semibold">
+                    {project.title}
+                  </h3>
 
-                <p className="mt-4 text-gray-600">{project.description}</p>
+                  <p className="mt-4 text-gray-600">{project.description}</p>
 
-                <p className="mt-5 text-sm text-gray-400">{project.stack}</p>
-              </div>
-            </article>
+                  <p className="mt-5 text-sm text-gray-400">{project.stack}</p>
+                </div>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>

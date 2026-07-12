@@ -1,52 +1,58 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Projet Web 01",
+      title: "Site vitrine premium",
+      category: "Web Design • Développement",
       description:
-        "Création d'une interface moderne avec une expérience utilisateur optimisée.",
-      stack: "Next.js • Tailwind CSS",
+        "Création d'une expérience web moderne pensée pour valoriser une marque et améliorer sa présence digitale.",
+      stack: "Next.js / Tailwind CSS",
     },
     {
-      title: "Projet Web 02",
-      description: "Développement d'un site vitrine responsive et performant.",
-      stack: "React • TypeScript",
+      title: "Plateforme digitale",
+      category: "Application Web",
+      description:
+        "Conception d'une interface rapide et intuitive adaptée aux besoins des utilisateurs.",
+      stack: "React / TypeScript",
     },
     {
-      title: "Projet Web 03",
-      description: "Intégration d'une maquette design en application web.",
-      stack: "Figma • Front-end",
+      title: "Refonte digitale",
+      category: "UX • Front-end",
+      description:
+        "Modernisation complète d'une identité web avec une approche centrée expérience utilisateur.",
+      stack: "Design / Front-end",
     },
   ];
 
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="max-w-2xl mb-12">
-          <p className="text-sm uppercase tracking-widest text-gray-500">
+        <div className="mb-20 max-w-3xl">
+          <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
             Portfolio
           </p>
 
-          <h2 className="mt-4 text-4xl font-bold">
-            Quelques projets réalisés.
+          <h2 className="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
+            Des expériences digitales conçues avec précision.
           </h2>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-3">
           {projects.map((project) => (
-            <article
-              key={project.title}
-              className="rounded-2xl border overflow-hidden"
-            >
-              <div className="h-52 bg-gray-100 flex items-center justify-center">
-                <span className="text-gray-400">Aperçu du projet</span>
+            <article key={project.title} className="group">
+              <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100">
+                <div className="flex h-full items-center justify-center text-gray-400 transition duration-500 group-hover:scale-105">
+                  Aperçu projet
+                </div>
               </div>
 
-              <div className="p-6">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
+              <div className="mt-6">
+                <p className="text-sm text-blue-600">{project.category}</p>
 
-                <p className="mt-3 text-gray-600">{project.description}</p>
+                <h3 className="mt-3 text-2xl font-semibold">{project.title}</h3>
 
-                <p className="mt-4 text-sm text-gray-500">{project.stack}</p>
+                <p className="mt-4 text-gray-600">{project.description}</p>
+
+                <p className="mt-5 text-sm text-gray-400">{project.stack}</p>
               </div>
             </article>
           ))}

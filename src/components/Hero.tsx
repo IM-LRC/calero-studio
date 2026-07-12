@@ -1,28 +1,38 @@
 const Hero = () => {
   return (
-    <section className="min-h-[80vh] flex items-center">
-      <div className="max-w-7xl mx-auto px-6">
-        <p className="mb-4 text-sm uppercase tracking-widest text-gray-500">
-          CALERO Studio
-        </p>
+    <section className="min-h-[90vh] flex items-center">
+      <div className="max-w-7xl mx-auto w-full px-6">
+        <div className="max-w-4xl">
+          <p className="mb-6 text-sm uppercase tracking-[0.3em] text-blue-600">
+            CALERO Studio
+          </p>
 
-        <h1 className="max-w-4xl text-5xl md:text-7xl font-bold tracking-tight">
-          Création de sites web modernes pour des projets ambitieux.
-        </h1>
+          <h1 className="text-5xl font-bold tracking-tight md:text-7xl">
+            Nous créons des expériences web
+            <span className="text-gray-400"> modernes et performantes.</span>
+          </h1>
 
-        <p className="mt-6 max-w-xl text-lg text-gray-600">
-          Nous concevons des expériences digitales rapides, élégantes et
-          adaptées aux besoins des entreprises.
-        </p>
+          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-gray-600 md:text-xl">
+            CALERO Studio accompagne les entreprises et les projets ambitieux
+            dans la création de sites web élégants, rapides et pensés pour
+            convertir.
+          </p>
 
-        <div className="mt-8 flex gap-4">
-          <button className="rounded-full bg-black px-6 py-3 text-white">
-            Voir mes projets
-          </button>
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#projects"
+              className="rounded-full bg-black px-8 py-4 text-center text-white transition hover:opacity-80"
+            >
+              Voir nos projets
+            </a>
 
-          <button className="rounded-full border px-6 py-3">
-            Me contacter
-          </button>
+            <a
+              href="#contact"
+              className="rounded-full border px-8 py-4 text-center transition hover:bg-black hover:text-white"
+            >
+              Démarrer un projet
+            </a>
+          </div>
         </div>
       </div>
     </section>

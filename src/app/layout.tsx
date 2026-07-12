@@ -1,21 +1,14 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const manrope = Manrope({
   subsets: ["latin"],
 });
 
 export const metadata = {
-  title: "CALERO Studio | Développement Web",
+  title: "CALERO Studio",
   description:
-    "CALERO Studio crée des sites web modernes et des intégrations web performantes.",
+    "CALERO Studio crée des expériences web modernes et performantes.",
 };
 
 export default function RootLayout({
@@ -24,11 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="fr">
+      <body className={manrope.className}>{children}</body>
     </html>
   );
 }

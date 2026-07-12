@@ -43,13 +43,13 @@ const Projects = () => {
         <div className="grid gap-10 md:grid-cols-3">
           {projects.map((project) => (
             <Reveal key={project.title}>
-              <article className="group">
+              <article className="group transition-all duration-500 hover:-translate-y-2">
                 <div className=" relative aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100 shadow-sm">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                   />
                 </div>
 

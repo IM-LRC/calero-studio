@@ -1,7 +1,25 @@
 export const Navbar = () => {
   return (
-    <header className="w-full border-b">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+    <header className="fixed top-0 left-0 z-50 w-full">
+      
+      <div className="absolute inset-0 bg-white/70 backdrop-blur-xl border-b border-black/5" />
+
+      <div
+        className="
+          absolute
+          top-full
+          left-0
+          h-50
+          w-full
+          bg-gradient-to-b
+          from-white/70
+          to-transparent
+          pointer-events-none
+        "
+      />
+
+      <nav className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+        
         {/* Logo */}
         <div className="text-xl font-bold tracking-tight">
           CALERO<span className="text-gray-500">.</span>
@@ -28,13 +46,38 @@ export const Navbar = () => {
           </li>
         </ul>
 
-        {/* Bouton */}
+        {/* CTA */}
         <a
           href="#contact"
-          className="rounded-full bg-black px-5 py-2 text-sm text-white hover:opacity-80 transition"
+          className="
+            group
+            relative
+            overflow-hidden
+            rounded-full
+            bg-black
+            px-5
+            py-2
+            text-white
+            transition
+          "
         >
-          Démarrer un projet
+          <span className="relative z-10">
+            Démarrer un projet
+          </span>
+
+          <span
+            className="
+              absolute
+              inset-0
+              translate-y-full
+              bg-blue-600
+              transition-transform
+              duration-700
+              group-hover:translate-y-0
+            "
+          />
         </a>
+
       </nav>
     </header>
   );

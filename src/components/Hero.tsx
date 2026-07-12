@@ -23,16 +23,31 @@ const Hero = () => {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#projects"
-                className="rounded-full bg-black px-8 py-4 text-center text-white transition hover:opacity-80"
+                className="
+    group
+    relative
+    overflow-hidden
+    rounded-full
+    bg-black
+    px-8
+    py-4
+    text-white
+    transition
+  "
               >
-                Voir nos projets
-              </a>
-
-              <a
-                href="#contact"
-                className="rounded-full border px-8 py-4 text-center transition hover:bg-black hover:text-white"
-              >
-                Démarrer un projet
+   
+                <span className="relative z-10"> Voir nos projets</span>
+                <span
+                  className="
+      absolute
+      inset-0
+      translate-y-full
+      bg-blue-600
+      transition-transform
+     duration-700
+      group-hover:translate-y-0
+    "
+                />
               </a>
             </div>
           </div>

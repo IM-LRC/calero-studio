@@ -18,7 +18,7 @@ const Reveal = ({ children }: { children: React.ReactNode }) => {
         amount: 0.2,
       }}
       transition={{
-        duration: 0.6,
+        duration: 0.8,
         ease: "easeOut",
       }}
     >

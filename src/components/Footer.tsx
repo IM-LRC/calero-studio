@@ -19,10 +19,6 @@ const Footer = () => {
           >
             hello@calero.studio
           </a>
-
-          <a href="#contact" className="hover:text-black transition">
-            Démarrer un projet →
-          </a>
         </div>
 
         <p className="text-sm text-gray-500">

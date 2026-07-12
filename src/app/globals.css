@@ -22,3 +22,6 @@ select {
 html {
   scroll-behavior: smooth;
 }
+section {
+  scroll-margin-top: 110px;
+}

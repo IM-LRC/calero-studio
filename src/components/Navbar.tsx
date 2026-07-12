@@ -1,7 +1,34 @@
+"use client";
+import { useEffect, useState } from "react";
 export const Navbar = () => {
+  const [active, setActive] = useState("");
+  const navLinks = [
+    { name: "Services", href: "#services", id: "services" },
+    { name: "Projets", href: "#projects", id: "projects" },
+    { name: "Contact", href: "#contact", id: "contact" },
+  ];
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <header className="fixed top-0 left-0 z-50 w-full">
-      
       <div className="absolute inset-0 bg-white/70 backdrop-blur-xl border-b border-black/5" />
 
       <div
@@ -9,7 +36,7 @@ export const Navbar = () => {
           absolute
           top-full
           left-0
-          h-50
+          h-32
           w-full
           bg-gradient-to-b
           from-white/70
@@ -19,7 +46,6 @@ export const Navbar = () => {
       />
 
       <nav className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
-        
         {/* Logo */}
         <div className="text-xl font-bold tracking-tight">
           CALERO<span className="text-gray-500">.</span>
@@ -27,23 +53,37 @@ export const Navbar = () => {
 
         {/* Navigation */}
         <ul className="hidden md:flex items-center gap-8 text-sm">
-          <li>
-            <a href="#services" className="hover:opacity-70 transition">
-              Services
-            </a>
-          </li>
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <a
+                href={link.href}
+                className={`
+  relative
+  transition-all
+  duration-300
+  ${active === link.id ? "text-black" : "text-gray-600 hover:text-black"}
+`}
+              >
+                {link.name}
 
-          <li>
-            <a href="#projects" className="hover:opacity-70 transition">
-              Projets
-            </a>
-          </li>
-
-          <li>
-            <a href="#contact" className="hover:opacity-70 transition">
-              Contact
-            </a>
-          </li>
+                <span
+                  className={`
+    absolute
+    -bottom-2
+    left-0
+    h-[2px]
+    w-full
+    origin-left
+    bg-blue-600
+    transition-all
+    duration-1000
+    ease-out
+    ${active === link.id ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"}
+  `}
+                />
+              </a>
+            </li>
+          ))}
         </ul>
 
         {/* CTA */}
@@ -61,9 +101,7 @@ export const Navbar = () => {
             transition
           "
         >
-          <span className="relative z-10">
-            Démarrer un projet
-          </span>
+          <span className="relative z-10">Démarrer un projet</span>
 
           <span
             className="
@@ -77,7 +115,6 @@ export const Navbar = () => {
             "
           />
         </a>
-
       </nav>
     </header>
   );

@@ -1,50 +1,64 @@
-# Calero Studio
+# Calero Studio — Landing Page
 
-🌐 Site officiel : https://calerostudio.com
+Website: https://calerostudio.com
 
-Application web développée avec **Next.js** pour Calero Studio.
+A modern landing page built with **Next.js** for Calero Studio.
+
+This website is optimized for performance, SEO, and a smooth user experience.
 
 ---
 
-## 🚀 Technologies utilisées
+## Technologies
 
 - Next.js (App Router)
 - React
 - TypeScript
 - Tailwind CSS
 - Node.js
-- PM2 pour le déploiement en production
-- VPS Linux
+- PM2 for production deployment
+- Linux VPS
 
 ---
 
-## 📦 Installation locale
+## Features
 
-### 1. Cloner le repository
+- Responsive landing page (mobile and desktop)
+- Modern UI design
+- SEO optimization with Next.js
+- Automatic sitemap generation
+- Robots.txt configuration
+- Performance optimization
+- Production deployment with PM2
+
+---
+
+## Local Development
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/IM-LRC/calero-studio.git
 ```
 
-### 2. Entrer dans le dossier du projet
+### 2. Navigate to the project folder
 
 ```bash
 cd calero-studio
 ```
 
-### 3. Installer les dépendances
+### 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Lancer le serveur de développement
+### 4. Start the development server
 
 ```bash
 npm run dev
 ```
 
-L'application sera disponible sur :
+The website will be available at:
 
 ```
 http://localhost:3000
@@ -52,15 +66,15 @@ http://localhost:3000
 
 ---
 
-## 🏗️ Build production
+## Production Build
 
-Créer le build Next.js :
+Create a production build:
 
 ```bash
 npm run build
 ```
 
-Lancer l'application en production :
+Start the production server:
 
 ```bash
 npm start
@@ -68,19 +82,19 @@ npm start
 
 ---
 
-## 🔍 SEO & Indexation Google
+## SEO Configuration
 
-Le projet utilise les fonctionnalités SEO natives de Next.js.
+The project uses Next.js built-in SEO features.
 
 ### Sitemap
 
-Disponible à :
+Available at:
 
 ```
 https://calerostudio.com/sitemap.xml
 ```
 
-Généré automatiquement depuis :
+Generated from:
 
 ```
 src/app/sitemap.ts
@@ -88,23 +102,21 @@ src/app/sitemap.ts
 
 ### Robots.txt
 
-Disponible à :
+Available at:
 
 ```
 https://calerostudio.com/robots.txt
 ```
 
-Généré depuis :
+Generated from:
 
 ```
 src/app/robots.ts
 ```
 
-Ces fichiers permettent aux moteurs de recherche d'explorer et d'indexer correctement le site.
-
 ---
 
-## 📁 Structure du projet
+## Project Structure
 
 ```
 calero-studio/
@@ -125,17 +137,17 @@ calero-studio/
 
 ---
 
-## 🚢 Déploiement Production
+## Deployment
 
-Le site est déployé sur un VPS Linux.
+The website is deployed on a Linux VPS.
 
-Gestionnaire de processus :
+Process manager:
 
 ```
 PM2
 ```
 
-Mise à jour du serveur :
+Production update:
 
 ```bash
 git pull
@@ -144,7 +156,7 @@ npm run build
 pm2 restart calero
 ```
 
-Vérifier le statut de l'application :
+Check application status:
 
 ```bash
 pm2 list
@@ -152,21 +164,21 @@ pm2 list
 
 ---
 
-## 🔄 Workflow Git
+## Git Workflow
 
-Ajouter les modifications :
+Add changes:
 
 ```bash
 git add .
 ```
 
-Créer un commit :
+Commit changes:
 
 ```bash
-git commit -m "Description du changement"
+git commit -m "Describe your changes"
 ```
 
-Envoyer vers GitHub :
+Push to GitHub:
 
 ```bash
 git push
@@ -174,22 +186,18 @@ git push
 
 ---
 
-## 🌐 Liens
+## Links
 
-Site en production :
+Production website:
 
-```
 https://calerostudio.com
-```
 
-Repository GitHub :
+GitHub repository:
 
-```
 https://github.com/IM-LRC/calero-studio
-```
 
 ---
 
-## 📄 Licence
+## License
 
-Projet privé — Calero Studio
+Private project — Calero Studio

@@ -6,6 +6,15 @@ A modern, responsive landing page built with Next.js
 
 https://calerostudio.com
 
+<br>
+
+<p>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+</p>
+
 </div>
 
 ---
@@ -28,7 +37,7 @@ The project focuses on performance, SEO optimization, responsive design, and a s
 
 ## Tech Stack
 
-- Next.js
+- Next.js (App Router)
 - React
 - TypeScript
 - Tailwind CSS
@@ -40,8 +49,9 @@ The project focuses on performance, SEO optimization, responsive design, and a s
 
 ## Features
 
-- Responsive design
-- SEO optimized
+- Responsive design for mobile and desktop
+- Modern user interface
+- SEO optimized architecture
 - Fast loading performance
 - Automatic sitemap generation
 - Robots.txt configuration
@@ -49,15 +59,34 @@ The project focuses on performance, SEO optimization, responsive design, and a s
 
 ---
 
+## Performance
+
+- Optimized Next.js rendering
+- SEO-friendly structure
+- Responsive across all devices
+- Production-ready deployment setup
+
+---
+
 ## SEO Configuration
 
-Sitemap:
+### Sitemap
+
+Available at:
 
 ```
 https://calerostudio.com/sitemap.xml
 ```
 
-Robots:
+Generated with:
+
+```
+src/app/sitemap.ts
+```
+
+### Robots.txt
+
+Available at:
 
 ```
 https://calerostudio.com/robots.txt
@@ -66,7 +95,6 @@ https://calerostudio.com/robots.txt
 Generated with:
 
 ```
-src/app/sitemap.ts
 src/app/robots.ts
 ```
 
@@ -80,6 +108,12 @@ Clone the repository:
 git clone https://github.com/IM-LRC/calero-studio.git
 ```
 
+Navigate to the project folder:
+
+```bash
+cd calero-studio
+```
+
 Install dependencies:
 
 ```bash
@@ -90,6 +124,12 @@ Run development server:
 
 ```bash
 npm run dev
+```
+
+The website will be available at:
+
+```
+http://localhost:3000
 ```
 
 ---
@@ -105,6 +145,12 @@ git pull
 npm install
 npm run build
 pm2 restart calero
+```
+
+Check application status:
+
+```bash
+pm2 list
 ```
 
 ---

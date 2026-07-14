@@ -1,57 +1,195 @@
-CALERO Studio
+# Calero Studio
 
-Site officiel de CALERO Studio, une micro-entreprise spécialisée dans la création de sites web modernes et l'intégration d'interfaces.
+🌐 Site officiel : https://calerostudio.com
 
-🚀 À propos
+Application web développée avec **Next.js** pour Calero Studio.
 
-CALERO Studio accompagne les projets web avec :
+---
 
-Création de sites vitrines modernes
-Intégration de maquettes Figma en code
-Développement avec des technologies web performantes
-Optimisation de l'expérience utilisateur
-🛠️ Technologies utilisées
-Next.js
-React
-TypeScript
-Tailwind CSS
-Git & GitHub
-📦 Installation
+## 🚀 Technologies utilisées
 
-Cloner le projet :
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- Node.js
+- PM2 pour le déploiement en production
+- VPS Linux
 
+---
+
+## 📦 Installation locale
+
+### 1. Cloner le repository
+
+```bash
 git clone https://github.com/IM-LRC/calero-studio.git
+```
 
-Installer les dépendances :
+### 2. Entrer dans le dossier du projet
 
+```bash
+cd calero-studio
+```
+
+### 3. Installer les dépendances
+
+```bash
 npm install
+```
 
-Lancer le serveur de développement :
+### 4. Lancer le serveur de développement
 
+```bash
 npm run dev
+```
 
-Le projet sera disponible sur :
+L'application sera disponible sur :
 
+```
 http://localhost:3000
-📁 Structure du projet
-src/
-├── app/
-├── components/
+```
+
+---
+
+## 🏗️ Build production
+
+Créer le build Next.js :
+
+```bash
+npm run build
+```
+
+Lancer l'application en production :
+
+```bash
+npm start
+```
+
+---
+
+## 🔍 SEO & Indexation Google
+
+Le projet utilise les fonctionnalités SEO natives de Next.js.
+
+### Sitemap
+
+Disponible à :
+
+```
+https://calerostudio.com/sitemap.xml
+```
+
+Généré automatiquement depuis :
+
+```
+src/app/sitemap.ts
+```
+
+### Robots.txt
+
+Disponible à :
+
+```
+https://calerostudio.com/robots.txt
+```
+
+Généré depuis :
+
+```
+src/app/robots.ts
+```
+
+Ces fichiers permettent aux moteurs de recherche d'explorer et d'indexer correctement le site.
+
+---
+
+## 📁 Structure du projet
+
+```
+calero-studio/
+
+├── src/
+│   └── app/
+│       ├── layout.tsx
+│       ├── page.tsx
+│       ├── sitemap.ts
+│       └── robots.ts
+│
 ├── public/
-└── styles/
-🌐 Déploiement
+│
+├── package.json
+├── next.config.js
+└── README.md
+```
 
-Le site sera déployé sur un serveur VPS avec une configuration Nginx et un nom de domaine personnalisé.
+---
 
-📌 Statut du projet
+## 🚢 Déploiement Production
 
-🚧 En développement
+Le site est déployé sur un VPS Linux.
 
-Le site vitrine CALERO Studio est actuellement en cours de création.
+Gestionnaire de processus :
 
-📞 Contact
+```
+PM2
+```
 
-CALERO Studio
-Développement web & intégration
+Mise à jour du serveur :
 
-Email : leocalvo.dev@gmail.com
+```bash
+git pull
+npm install
+npm run build
+pm2 restart calero
+```
+
+Vérifier le statut de l'application :
+
+```bash
+pm2 list
+```
+
+---
+
+## 🔄 Workflow Git
+
+Ajouter les modifications :
+
+```bash
+git add .
+```
+
+Créer un commit :
+
+```bash
+git commit -m "Description du changement"
+```
+
+Envoyer vers GitHub :
+
+```bash
+git push
+```
+
+---
+
+## 🌐 Liens
+
+Site en production :
+
+```
+https://calerostudio.com
+```
+
+Repository GitHub :
+
+```
+https://github.com/IM-LRC/calero-studio
+```
+
+---
+
+## 📄 Licence
+
+Projet privé — Calero Studio

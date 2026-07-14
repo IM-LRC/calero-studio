@@ -1,153 +1,104 @@
-# Calero Studio — Landing Page
+<div align="center">
 
-Website: https://calerostudio.com
+# Calero Studio
 
-A modern landing page built with **Next.js** for Calero Studio.
+A modern, responsive landing page built with Next.js
 
-This website is optimized for performance, SEO, and a smooth user experience.
+https://calerostudio.com
+
+</div>
 
 ---
 
-## Technologies
+## Preview
 
-- Next.js (App Router)
+<p align="center">
+  <img src="./screenshots/homepage.png" alt="Calero Studio Preview" width="900">
+</p>
+
+---
+
+## About
+
+Calero Studio is a modern and responsive landing page built with Next.js.
+
+The project focuses on performance, SEO optimization, responsive design, and a smooth user experience.
+
+---
+
+## Tech Stack
+
+- Next.js
 - React
 - TypeScript
 - Tailwind CSS
 - Node.js
-- PM2 for production deployment
+- PM2
 - Linux VPS
 
 ---
 
 ## Features
 
-- Responsive landing page (mobile and desktop)
-- Modern UI design
-- SEO optimization with Next.js
+- Responsive design
+- SEO optimized
+- Fast loading performance
 - Automatic sitemap generation
 - Robots.txt configuration
-- Performance optimization
-- Production deployment with PM2
-
----
-
-## Local Development
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/IM-LRC/calero-studio.git
-```
-
-### 2. Navigate to the project folder
-
-```bash
-cd calero-studio
-```
-
-### 3. Install dependencies
-
-```bash
-npm install
-```
-
-### 4. Start the development server
-
-```bash
-npm run dev
-```
-
-The website will be available at:
-
-```
-http://localhost:3000
-```
-
----
-
-## Production Build
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-Start the production server:
-
-```bash
-npm start
-```
+- Production deployment workflow
 
 ---
 
 ## SEO Configuration
 
-The project uses Next.js built-in SEO features.
-
-### Sitemap
-
-Available at:
+Sitemap:
 
 ```
 https://calerostudio.com/sitemap.xml
 ```
 
-Generated from:
-
-```
-src/app/sitemap.ts
-```
-
-### Robots.txt
-
-Available at:
+Robots:
 
 ```
 https://calerostudio.com/robots.txt
 ```
 
-Generated from:
+Generated with:
 
 ```
+src/app/sitemap.ts
 src/app/robots.ts
 ```
 
 ---
 
-## Project Structure
+## Development
 
+Clone the repository:
+
+```bash
+git clone https://github.com/IM-LRC/calero-studio.git
 ```
-calero-studio/
 
-├── src/
-│   └── app/
-│       ├── layout.tsx
-│       ├── page.tsx
-│       ├── sitemap.ts
-│       └── robots.ts
-│
-├── public/
-│
-├── package.json
-├── next.config.js
-└── README.md
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
 ```
 
 ---
 
-## Deployment
+## Production Deployment
 
-The website is deployed on a Linux VPS.
+The website is deployed on a Linux VPS using PM2.
 
-Process manager:
-
-```
-PM2
-```
-
-Production update:
+Update production:
 
 ```bash
 git pull
@@ -156,43 +107,15 @@ npm run build
 pm2 restart calero
 ```
 
-Check application status:
-
-```bash
-pm2 list
-```
-
----
-
-## Git Workflow
-
-Add changes:
-
-```bash
-git add .
-```
-
-Commit changes:
-
-```bash
-git commit -m "Describe your changes"
-```
-
-Push to GitHub:
-
-```bash
-git push
-```
-
 ---
 
 ## Links
 
-Production website:
+Website:
 
 https://calerostudio.com
 
-GitHub repository:
+Repository:
 
 https://github.com/IM-LRC/calero-studio
 

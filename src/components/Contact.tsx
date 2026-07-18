@@ -1,49 +1,108 @@
+import Reveal from "@/components/Reveal";
+
 const Contact = () => {
   return (
     <section id="contact" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
-          Contact
-        </p>
+        <Reveal>
+          <div className="grid gap-16 md:grid-cols-2">
+            <div>
+              <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
+                Contact
+              </p>
 
-        <h2 className="mt-6 max-w-4xl text-4xl font-bold tracking-tight md:text-5xl">
-          Construisons ensemble votre prochain projet digital.
-        </h2>
+              <h2 className="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
+                Construisons ensemble votre prochain projet.
+              </h2>
 
-        <p className="mt-6 max-w-2xl text-lg text-gray-600">
-          Une idée, une entreprise à développer ou un projet web à créer ?
-          CALERO Studio vous accompagne de la conception au développement.
-        </p>
+              <p className="mt-6 max-w-md text-lg text-gray-600">
+                Une idée, un site à créer ou une refonte ? Échangeons autour de
+                votre projet.
+              </p>
+            </div>
 
-        <a
-          href="mailto:leocalvo.dev@gmail.com"
-          className="
-        group
-        relative
-        mt-10
-        inline-flex
-        overflow-hidden
-        rounded-full
-        bg-black
-        px-8
-        py-4
-        text-white
-      "
-        >
-          <span className="relative z-10">Démarrer un projet</span>
+            <form className="space-y-5">
+              <input
+                type="text"
+                placeholder="Votre nom"
+                className="
+                  w-full
+                  rounded-2xl
+                  border
+                  border-gray-200
+                  px-5
+                  py-4
+                  outline-none
+                  transition
+                  focus:border-black
+                "
+              />
 
-          <span
-            className="
-          absolute
-          inset-0
-          translate-y-full
-          bg-blue-600
-          transition-transform
-          duration-700
-          group-hover:translate-y-0
-        "
-          />
-        </a>
+              <input
+                type="email"
+                placeholder="Votre email"
+                className="
+                  w-full
+                  rounded-2xl
+                  border
+                  border-gray-200
+                  px-5
+                  py-4
+                  outline-none
+                  transition
+                  focus:border-black
+                "
+              />
+
+              <input
+                type="text"
+                placeholder="Sujet"
+                className="
+                  w-full
+                  rounded-2xl
+                  border
+                  border-gray-200
+                  px-5
+                  py-4
+                  outline-none
+                  transition
+                  focus:border-black
+                "
+              />
+
+              <textarea
+                placeholder="Parlez-moi de votre projet..."
+                rows={5}
+                className="
+                  w-full
+                  rounded-2xl
+                  border
+                  border-gray-200
+                  px-5
+                  py-4
+                  outline-none
+                  transition
+                  focus:border-black
+                "
+              />
+
+              <button
+                type="submit"
+                className="
+                  rounded-full
+                  bg-black
+                  px-8
+                  py-4
+                  text-white
+                  transition
+                  hover:bg-blue-600
+                "
+              >
+                Envoyer
+              </button>
+            </form>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

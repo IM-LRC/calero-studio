@@ -4,7 +4,7 @@ import Image from "next/image";
 const Projects = () => {
   const projects = [
     {
-      title: "CALERO Studio",
+      title: "Projet interne",
       category: "Design • Développement",
       description:
         "Création d'une identité digitale minimaliste et d'une expérience web performante.",
@@ -51,7 +51,7 @@ const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                    className="object-cover transition duration-700 group-hover:scale-105"
                   />
                 </div>
 

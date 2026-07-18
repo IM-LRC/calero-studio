@@ -7,17 +7,17 @@ const About = () => {
         <Reveal>
           <div className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
-              À propos
+              Studio
             </p>
 
             <h2 className="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
-              Derrière CALERO Studio.
+              Derrière CALERO.
             </h2>
 
             <p className="mt-8 text-lg leading-relaxed text-gray-600">
-              CALERO Studio est un studio digital indépendant fondé par Léo,
-              spécialisé dans la création de sites web modernes, performants et
-              sur mesure.
+              CALERO est un studio digital indépendant fondé par Léo, avec une
+              approche centrée sur le design, la qualité technique et
+              l'expérience utilisateur.
             </p>
           </div>
         </Reveal>

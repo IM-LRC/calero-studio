@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 
 const Hero = () => {
   return (
-    <section className="min-h-[90vh] flex items-center">
+    <section className="min-h-[75vh] flex items-center">
       <div className="max-w-7xl mx-auto w-full px-6">
         <Reveal>
           <div className="max-w-4xl">
@@ -11,13 +11,13 @@ const Hero = () => {
             </p>
 
             <h1 className="text-5xl font-bold tracking-tight md:text-7xl">
-              Expériences web
-              <span className="text-gray-400"> modernes et performantes.</span>
+              Sites web
+              <span className="text-gray-400"> modernes et performants.</span>
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-gray-600 md:text-xl">
-              Studio digital indépendant spécialisé dans la création de sites
-              web sur mesure.
+              CALERO conçoit des expériences digitales qui allient design,
+              performance et simplicité.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -35,7 +35,7 @@ const Hero = () => {
                   transition
                 "
               >
-                <span className="relative z-10">Parlons de votre projet</span>
+                <span className="relative z-10">Parler de mon projet</span>
 
                 <span
                   className="
@@ -62,7 +62,7 @@ const Hero = () => {
                   hover:border-black
                 "
               >
-                Voir les projets
+                Voir les réalisations
               </a>
             </div>
           </div>

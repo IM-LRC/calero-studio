@@ -6,22 +6,20 @@ const Services = () => {
       number: "01",
       title: "Création de sites web",
       description:
-        "Des sites vitrines modernes, rapides et adaptés à votre activité.",
+        "Des expériences web modernes pensées pour valoriser votre activité.",
     },
     {
       number: "02",
       title: "Développement sur mesure",
-      description:
-        "Des interfaces web performantes conçues avec des technologies modernes.",
+      description: "Des solutions web personnalisées pensées pour vos besoins.",
     },
     {
       number: "03",
       title: "Design & expérience utilisateur",
       description:
-        "Des interfaces simples et élégantes pensées pour vos utilisateurs.",
+        "Des interfaces élégantes conçues pour offrir une expérience fluide.",
     },
   ];
-
   return (
     <section id="services" className="py-32">
       <div className="max-w-7xl mx-auto px-6">

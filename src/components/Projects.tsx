@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="mb-20 max-w-3xl">
+        <div className="mb-20 max-w-3xl text-center md:text-left">
           <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
             Réalisations
           </p>
@@ -42,10 +42,10 @@ const Projects = () => {
           </h2>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-16 md:grid-cols-3 md:gap-10">
           {projects.map((project) => (
             <Reveal key={project.title}>
-              <article className="group transition-all duration-500 hover:-translate-y-2">
+              <article className="group transition-all duration-500 md:hover:-translate-y-2">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100 shadow-sm">
                   <Image
                     src={project.image}

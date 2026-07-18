@@ -3,28 +3,27 @@ import Reveal from "@/components/Reveal";
 const Services = () => {
   const services = [
     {
-      number: "01",
       title: "Création de sites web",
       description:
         "Des expériences web modernes pensées pour valoriser votre activité.",
     },
     {
-      number: "02",
       title: "Développement sur mesure",
-      description: "Des solutions web personnalisées pensées pour vos besoins.",
+      description:
+        "Des solutions web personnalisées pensées pour répondre à vos objectifs.",
     },
     {
-      number: "03",
       title: "Design & expérience utilisateur",
       description:
         "Des interfaces élégantes conçues pour offrir une expérience fluide.",
     },
   ];
+
   return (
     <section id="services" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal>
-          <div className="max-w-3xl mb-20">
+          <div className="mb-20 max-w-3xl text-center md:text-left">
             <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
               Services
             </p>
@@ -38,16 +37,28 @@ const Services = () => {
         <div className="divide-y border-y">
           {services.map((service) => (
             <div
-              key={service.number}
-              className="group flex flex-col gap-6 py-10 md:flex-row md:items-start md:justify-between"
+              key={service.title}
+              className="
+                group
+                flex
+                flex-col
+                gap-6
+                py-10
+                md:flex-row
+                md:items-start
+                md:justify-between
+              "
             >
-              <div className="flex gap-8">
-                <span className="text-sm text-gray-400">{service.number}</span>
-
-                <h3 className="text-2xl font-semibold transition group-hover:text-blue-600">
-                  {service.title}
-                </h3>
-              </div>
+              <h3
+                className="
+                  text-2xl
+                  font-semibold
+                  transition
+                  group-hover:text-blue-600
+                "
+              >
+                {service.title}
+              </h3>
 
               <p className="max-w-xl text-gray-600">{service.description}</p>
             </div>

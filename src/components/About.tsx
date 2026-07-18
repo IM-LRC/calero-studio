@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="py-40">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal>
-          <div className="max-w-4xl">
+          <div className="max-w-4xl text-center md:text-left">
             <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
               Studio
             </p>
@@ -14,9 +14,8 @@ const About = () => {
               Derrière CALERO.
             </h2>
 
-            <p className="mt-8 text-lg leading-relaxed text-gray-600">
-              CALERO est un studio digital indépendant fondé par Léo, avec une
-              approche centrée sur le design, la qualité technique et
+            <p className="mt-8 mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 md:mx-0">
+              Une approche centrée sur le design, la qualité technique et
               l'expérience utilisateur.
             </p>
           </div>

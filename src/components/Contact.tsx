@@ -62,7 +62,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-6">
         <Reveal>
           <div className="grid gap-16 md:grid-cols-2">
-            <div>
+            <div className="text-center md:text-left">
               <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
                 Contact
               </p>
@@ -71,7 +71,7 @@ const Contact = () => {
                 Construisons ensemble votre prochain projet.
               </h2>
 
-              <p className="mt-6 max-w-md text-lg text-gray-600">
+              <p className="mx-auto mt-6 max-w-md text-lg text-gray-600 md:mx-0">
                 Une idée, un site à créer ou une refonte ? Échangeons autour de
                 votre projet.
               </p>
@@ -159,25 +159,31 @@ const Contact = () => {
                 "
               />
 
-              <button
-                type="submit"
-                disabled={loading}
-                className="
-                  rounded-full
-                  bg-black
-                  px-8
-                  py-4
-                  text-white
-                  transition
-                  hover:bg-blue-600
-                  disabled:cursor-not-allowed
-                  disabled:opacity-50
-                "
-              >
-                {loading ? "Envoi..." : "Envoyer"}
-              </button>
+              <div className="flex justify-center md:justify-start">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="
+                    rounded-full
+                    bg-black
+                    px-8
+                    py-4
+                    text-white
+                    transition
+                    hover:bg-blue-600
+                    disabled:cursor-not-allowed
+                    disabled:opacity-50
+                  "
+                >
+                  {loading ? "Envoi..." : "Envoyer"}
+                </button>
+              </div>
 
-              {status && <p className="text-sm text-gray-600">{status}</p>}
+              {status && (
+                <p className="text-center text-sm text-gray-600 md:text-left">
+                  {status}
+                </p>
+              )}
             </form>
           </div>
         </Reveal>

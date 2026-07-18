@@ -2,10 +2,10 @@ import Reveal from "@/components/Reveal";
 
 const Hero = () => {
   return (
-    <section className="min-h-[75vh] flex items-center">
+    <section className="min-h-[75vh] flex items-center pt-24 md:pt-0">
       <div className="max-w-7xl mx-auto w-full px-6">
         <Reveal>
-          <div className="max-w-4xl">
+          <div className="max-w-4xl text-center md:text-left">
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-blue-600">
               CALERO Studio
             </p>
@@ -20,17 +20,19 @@ const Hero = () => {
               performance et simplicité.
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:items-start">
               <a
                 href="#contact"
                 className="
                   group
                   relative
+                  min-w-[220px]
                   overflow-hidden
                   rounded-full
                   bg-black
                   px-8
                   py-4
+                  text-center
                   text-white
                   transition
                 "
@@ -53,11 +55,13 @@ const Hero = () => {
               <a
                 href="#projects"
                 className="
+                  min-w-[220px]
                   rounded-full
                   border
                   border-gray-300
                   px-8
                   py-4
+                  text-center
                   transition
                   hover:border-black
                 "

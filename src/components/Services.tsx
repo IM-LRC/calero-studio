@@ -1,23 +1,24 @@
 import Reveal from "@/components/Reveal";
+
 const Services = () => {
   const services = [
     {
       number: "01",
       title: "Création de sites web",
       description:
-        "Des sites modernes conçus pour présenter votre activité, renforcer votre image et offrir une expérience fluide.",
+        "Des sites vitrines modernes, rapides et adaptés à votre activité.",
     },
     {
       number: "02",
-      title: "Développement front-end",
+      title: "Développement sur mesure",
       description:
-        "Des interfaces rapides et responsives développées avec des technologies web modernes.",
+        "Des interfaces web performantes conçues avec des technologies modernes.",
     },
     {
       number: "03",
       title: "Design & expérience utilisateur",
       description:
-        "Une approche centrée utilisateur pour créer des interfaces simples, élégantes et efficaces.",
+        "Des interfaces simples et élégantes pensées pour vos utilisateurs.",
     },
   ];
 

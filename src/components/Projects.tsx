@@ -1,32 +1,34 @@
 import Reveal from "@/components/Reveal";
 import Image from "next/image";
+
 const Projects = () => {
   const projects = [
     {
-      title: "Site vitrine premium",
-      category: "Web Design • Développement",
+      title: "CALERO Studio",
+      category: "Design • Développement",
       description:
-        "Création d'une expérience web moderne pensée pour valoriser une marque et améliorer sa présence digitale.",
+        "Création d'une identité digitale minimaliste et d'une expérience web performante.",
       stack: "Next.js / Tailwind CSS",
       image: "/projects/project-1.png",
     },
     {
-      title: "Plateforme digitale",
+      title: "Dashboard Web",
       category: "Application Web",
       description:
-        "Conception d'une interface rapide et intuitive adaptée aux besoins des utilisateurs.",
+        "Conception d'une interface moderne pensée pour simplifier la gestion des données.",
       stack: "React / TypeScript",
       image: "/projects/project-2.png",
     },
     {
-      title: "Refonte digitale",
+      title: "Refonte d'interface",
       category: "UX • Front-end",
       description:
-        "Modernisation complète d'une identité web avec une approche centrée expérience utilisateur.",
+        "Modernisation d'une expérience web avec une approche centrée sur l'utilisateur.",
       stack: "Design / Front-end",
       image: "/projects/project-3.png",
     },
   ];
+
   return (
     <section id="projects" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
@@ -36,7 +38,7 @@ const Projects = () => {
           </p>
 
           <h2 className="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
-            Des expériences digitales conçues avec précision.
+            Des projets conçus avec précision.
           </h2>
         </div>
 
@@ -44,7 +46,7 @@ const Projects = () => {
           {projects.map((project) => (
             <Reveal key={project.title}>
               <article className="group transition-all duration-500 hover:-translate-y-2">
-                <div className=" relative aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100 shadow-sm">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-gray-100 shadow-sm">
                   <Image
                     src={project.image}
                     alt={project.title}

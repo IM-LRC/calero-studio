@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 
 const About = () => {
   return (
-    <section className="py-32">
+    <section id="about" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal>
           <div className="max-w-4xl">
@@ -16,8 +16,8 @@ const About = () => {
 
             <p className="mt-8 text-lg leading-relaxed text-gray-600">
               CALERO Studio est un studio digital indépendant fondé par Léo,
-              spécialisé dans la création d'expériences web modernes,
-              performantes et sur mesure.
+              spécialisé dans la création de sites web modernes, performants et
+              sur mesure.
             </p>
           </div>
         </Reveal>

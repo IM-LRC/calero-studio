@@ -5,6 +5,7 @@ export const Navbar = () => {
   const navLinks = [
     { name: "Services", href: "#services", id: "services" },
     { name: "Projets", href: "#projects", id: "projects" },
+    { name: "Studio", href: "#about", id: "about" },
     { name: "Contact", href: "#contact", id: "contact" },
   ];
   useEffect(() => {

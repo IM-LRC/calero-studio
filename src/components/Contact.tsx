@@ -1,6 +1,62 @@
+"use client";
+
+import { useState } from "react";
 import Reveal from "@/components/Reveal";
 
 const Contact = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setForm((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    setLoading(true);
+    setStatus("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (!response.ok) {
+        throw new Error();
+      }
+
+      setStatus("Merci pour votre message. Je reviens vers vous rapidement.");
+
+      setForm({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch {
+      setStatus("Une erreur est survenue. Veuillez réessayer.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-32">
       <div className="max-w-7xl mx-auto px-6">
@@ -21,9 +77,14 @@ const Contact = () => {
               </p>
             </div>
 
-            <form className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <input
+                required
                 type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                autoComplete="name"
                 placeholder="Votre nom"
                 className="
                   w-full
@@ -39,7 +100,12 @@ const Contact = () => {
               />
 
               <input
+                required
                 type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                autoComplete="email"
                 placeholder="Votre email"
                 className="
                   w-full
@@ -56,6 +122,9 @@ const Contact = () => {
 
               <input
                 type="text"
+                name="subject"
+                value={form.subject}
+                onChange={handleChange}
                 placeholder="Sujet"
                 className="
                   w-full
@@ -71,6 +140,10 @@ const Contact = () => {
               />
 
               <textarea
+                required
+                name="message"
+                value={form.message}
+                onChange={handleChange}
                 placeholder="Parlez-moi de votre projet..."
                 rows={5}
                 className="
@@ -88,6 +161,7 @@ const Contact = () => {
 
               <button
                 type="submit"
+                disabled={loading}
                 className="
                   rounded-full
                   bg-black
@@ -96,10 +170,14 @@ const Contact = () => {
                   text-white
                   transition
                   hover:bg-blue-600
+                  disabled:cursor-not-allowed
+                  disabled:opacity-50
                 "
               >
-                Envoyer
+                {loading ? "Envoi..." : "Envoyer"}
               </button>
+
+              {status && <p className="text-sm text-gray-600">{status}</p>}
             </form>
           </div>
         </Reveal>

@@ -2,7 +2,7 @@
 
 # Calero Studio
 
-A modern, responsive landing page built with Next.js
+A modern, responsive digital studio website built with Next.js
 
 https://calerostudio.com
 
@@ -13,7 +13,8 @@ https://calerostudio.com
   <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white">
-  <img src="https://img.shields.io/badge/Version-1.0.0-gray?style=flat-square">
+<img src="https://img.shields.io/badge/Resend-API-black?style=flat-square">
+  <img src="https://img.shields.io/badge/Version-1.1.0-gray?style=flat-square">
 </p>
 
 </div>
@@ -30,11 +31,13 @@ https://calerostudio.com
 
 ## About
 
-Calero Studio is a modern and responsive landing page built with Next.js.
+Calero Studio is a modern digital studio website built with Next.js.
 
-The project focuses on performance, SEO optimization, responsive design, and a smooth user experience.
+The project focuses on creating a premium web experience combining minimalist design, performance, responsive architecture and user experience.
 
-Current version: **1.0.0**
+Version **1.1.0** introduces a refined brand identity, improved responsive layouts and a functional contact system powered by Resend.
+
+Current version: **1.1.0**
 
 ---
 
@@ -44,6 +47,7 @@ Current version: **1.0.0**
 - React
 - TypeScript
 - Tailwind CSS
+- Resend API
 - Node.js
 - PM2
 - Linux VPS
@@ -52,13 +56,38 @@ Current version: **1.0.0**
 
 ## Features
 
-- Responsive design for mobile and desktop
-- Modern user interface
-- SEO optimized architecture
+- Responsive design for mobile, tablet and desktop
+- Premium minimalist interface
+- Modern landing page architecture
+- SEO optimized structure
 - Fast loading performance
+- Smooth reveal animations
+- Contact form with email delivery
 - Automatic sitemap generation
 - Robots.txt configuration
 - Production deployment workflow
+
+---
+
+## Version 1.1.0 Updates
+
+### Brand & Design
+
+- Refined CALERO Studio identity
+- Improved content consistency across sections
+- Updated hero messaging
+- Improved mobile experience
+- Better spacing and visual hierarchy
+- More coherent navigation structure
+
+### Contact System
+
+- Added functional contact form
+- Form validation
+- Loading states
+- Success and error messages
+- Email delivery through Resend API
+- Custom domain email sending configuration
 
 ---
 
@@ -67,6 +96,7 @@ Current version: **1.0.0**
 - Optimized Next.js rendering
 - SEO-friendly structure
 - Responsive across all devices
+- Optimized image loading
 - Production-ready deployment setup
 
 ---
@@ -172,4 +202,6 @@ https://github.com/IM-LRC/calero-studio
 
 ## License
 
-Private project — Calero Studio
+Private project.
+
+© Calero Studio. All rights reserved.

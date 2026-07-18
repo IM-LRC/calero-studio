@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 export const Navbar = () => {
   const [active, setActive] = useState("");
   const navLinks = [
-    { name: "Services", href: "#services", id: "services" },
-    { name: "Projets", href: "#projects", id: "projects" },
     { name: "Studio", href: "#about", id: "about" },
+    { name: "Services", href: "#services", id: "services" },
+    { name: "Réalisations", href: "#projects", id: "projects" },
     { name: "Contact", href: "#contact", id: "contact" },
   ];
   useEffect(() => {

@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 
 const About = () => {
   return (
-    <section id="about" className="py-32">
+    <section id="about" className="py-40">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal>
           <div className="max-w-4xl">

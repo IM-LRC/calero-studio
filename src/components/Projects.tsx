@@ -34,7 +34,7 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-20 max-w-3xl">
           <p className="text-sm uppercase tracking-[0.3em] text-blue-600">
-            Portfolio
+            Réalisations
           </p>
 
           <h2 className="mt-6 text-4xl font-bold tracking-tight md:text-5xl">

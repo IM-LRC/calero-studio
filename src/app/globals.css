@@ -25,3 +25,30 @@ html {
 section {
   scroll-margin-top: 110px;
 }
+/* CALERO Studio — Animation des forfaits */
+
+.pricing-card {
+  transform: translate3d(0, 0, 0);
+
+  transition:
+    transform 450ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .pricing-card:hover {
+    transform: translate3d(0, -4px, 0);
+    box-shadow: 0 16px 40px -18px rgba(0, 0, 0, 0.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pricing-card {
+    transition: none;
+    transform: none;
+  }
+
+  .pricing-card:hover {
+    transform: none;
+  }
+}

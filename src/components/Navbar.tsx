@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 export const Navbar = () => {
   const [active, setActive] = useState("");
   const navLinks = [
-    { name: "Studio", href: "#about", id: "about" },
-    { name: "Services", href: "#services", id: "services" },
+    { name: "Forfaits", href: "#forfaits", id: "forfaits" },
     { name: "Réalisations", href: "#projects", id: "projects" },
     { name: "Contact", href: "#contact", id: "contact" },
   ];
